@@ -1,5 +1,6 @@
 import Sidebar from "./components/sidebar";
 import DashboardCard from "./components/DashboardCard";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
@@ -7,13 +8,19 @@ export default function Home() {
       <Sidebar />
 
       <section className="flex-1 p-8">
-        <h1 className="text-4xl font-bold text-gray-900">
-          Dashboard
-        </h1>
+        <Navbar />
 
-        <p className="text-gray-600 mt-2">
-          Welcome to FlowDesk AI
-        </p>
+        <div className="mt-8">
+          <h1 className="text-4xl font-bold text-gray-900">
+            Dashboard
+          </h1>
+
+          <p className="text-gray-600 mt-2">
+            Welcome to FlowDesk AI
+          </p>
+        </div>
+
+       
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             <DashboardCard
               title="Clients"
